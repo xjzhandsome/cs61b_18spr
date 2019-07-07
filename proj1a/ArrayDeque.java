@@ -127,6 +127,6 @@ public class ArrayDeque<T> {
 		for(int i = 0; i <= index; i++) {
 			tmp = plusOne(tmp);
 		}
-		return items[tmp];
+		return items[tmp - 1];
 	}
 }
