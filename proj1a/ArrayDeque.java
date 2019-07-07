@@ -1,4 +1,4 @@
-public class ArrayDeque{
+public class ArrayDeque<T>{
 	private T[] items;
 	private static int size;
 	//if head = tail, which means the deque is empty;
@@ -24,11 +24,11 @@ public class ArrayDeque{
 	}
 	//calculate the position of next head item;
 	public int minusOne(int index){
-		return Math.floormod(index - 1, items.length);
+		return Math.floorMod(index - 1, items.length);
 	}
 	//calculate the position of next tail item;
 	public int plusOne(int index){
-		return Math.floormod(index + 1, items.length);
+		return Math.floorMod(index + 1, items.length);
 	}
 
 	public void resize(){
